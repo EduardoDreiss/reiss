@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dados Rpg</title>
+  <link rel="stylesheet" href="dado.css">
+  <link rel="shortcut icon" href="ico/logo2.ico" type="image/x-icon">
+</head>
+<div id="quadrado">
+<body>
+  <h1>Rolagem de Dados</h1>
+  <form>
+    <label for="dado">Escolha o dado:</label>
+    <select id="dado" name="dado">
+      <option value="2">D2</option>
+      <option value="4">D4</option>
+      <option value="6">D6</option>
+      <option value="8">D8</option>
+      <option value="10">D10</option>
+      <option value="12">D12</option>
+      <option value="20">D20</option>
+      <option value="100">D100</option>
+    </select>
+    <button type="button" onclick="rollDice()">Rolar Dado</button>
+  </form>
+  <div id="resultado"></div>
+
+  <script>
+    function rollDice() {
+      let sides = document.getElementById("dado").value;
+      let resultado = Math.floor(Math.random() * sides) + 1;
+      document.getElementById("resultado").innerHTML = `Dado sorteado: D${sides}<br>Número sorteado: ${resultado}`;
+    }
+  </script>
+</body>
+</div>
+<footer>
+  Eduardo Reis, Eduardo Gomes, Gabriel de Godoy, Kaue Juan
+</footer>
+</html>

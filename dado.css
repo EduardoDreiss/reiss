@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    margin-top: 150px;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+button{
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: rgba(236, 156, 243, 0.856);
+}
+select{
+    padding: 8px 20px;
+}
+#quadrado{
+    background-color:goldenrod;
+    padding: 100px 30px;
+    margin: 200px;
+
+}
+h1{
+    margin: 2px;
+}
+#resultado{
+    color: black;
+    font-size: large;
+}
+#dado{
+    border-radius: 5%;
+    background-color:antiquewhite;
+    color: black;
+    border-style: initial;
+}
+footer{
+    text-align: left;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    font-family: Arial;
+    font-size: larger;
+}
