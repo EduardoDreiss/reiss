@@ -4,6 +4,7 @@
   <title>Dados Rpg</title>
   <link rel="stylesheet" href="dado.css">
   <link rel="shortcut icon" href="ico/logo2.ico" type="image/x-icon">
+  <script src="dado.js"></script>
 </head>
 <div id="quadrado">
 <body>
@@ -23,14 +24,6 @@
     <button type="button" onclick="rollDice()">Rolar Dado</button>
   </form>
   <div id="resultado"></div>
-
-  <script>
-    function rollDice() {
-      let sides = document.getElementById("dado").value;
-      let resultado = Math.floor(Math.random() * sides) + 1;
-      document.getElementById("resultado").innerHTML = `Dado sorteado: D${sides}<br>Número sorteado: ${resultado}`;
-    }
-  </script>
 </body>
 </div>
 <footer>
